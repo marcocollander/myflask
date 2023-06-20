@@ -10,10 +10,6 @@ class NameForm(FlaskForm):
     submit = SubmitField("Wyślij")
 
 
-class LoginForm(FlaskForm):
-    email = StringField("Email", validators=[Email()])
-    password = PasswordField("Hasło", validators=[DataRequired()])
-    submit = SubmitField("Zaloguj się")
 
 
 class RegisterForm(FlaskForm):
